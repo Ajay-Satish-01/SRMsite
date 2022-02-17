@@ -12,14 +12,12 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import LaptopIcon from '@mui/icons-material/Laptop';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import ListSubheader from '@mui/material/ListSubheader';
 import ListItemButton from '@mui/material/ListItemButton';
 import Collapse from '@mui/material/Collapse';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import DraftsIcon from '@mui/icons-material/Drafts';
-import SendIcon from '@mui/icons-material/Send';
-import ExpandLess from '@mui/icons-material/ExpandLess';
-import ExpandMore from '@mui/icons-material/ExpandMore';
+
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+
 import StarBorder from '@mui/icons-material/StarBorder';
 const drawerWidth = 240;
 
@@ -108,7 +106,7 @@ export default function PermanentDrawerLeft(props) {
               <LaptopIcon />
             </ListItemIcon>
             <ListItemText primary="Academic Reports" />
-            {ARopen ? <ExpandLess /> : <ExpandMore />}
+            {!ARopen ? <ChevronRightIcon /> : <KeyboardArrowDownIcon />}
           </ListItemButton>
           <Collapse in={ARopen} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
@@ -133,7 +131,7 @@ export default function PermanentDrawerLeft(props) {
               <LaptopIcon />
             </ListItemIcon>
             <ListItemText primary="Student Reports" />
-            {studopen ? <ExpandLess /> : <ExpandMore />}
+            {!studopen ? <ChevronRightIcon /> : <KeyboardArrowDownIcon />}
           </ListItemButton>
           <Collapse in={studopen} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
@@ -158,7 +156,7 @@ export default function PermanentDrawerLeft(props) {
               <LaptopIcon />
             </ListItemIcon>
             <ListItemText primary="Unified Time Table" />
-            {Uttopen ? <ExpandLess /> : <ExpandMore />}
+            {!Uttopen ? <ChevronRightIcon /> : <KeyboardArrowDownIcon />}
           </ListItemButton>
           <Collapse in={Uttopen} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
@@ -191,7 +189,7 @@ export default function PermanentDrawerLeft(props) {
               <LaptopIcon />
             </ListItemIcon>
             <ListItemText primary="Student Reports" />
-            {NRopen ? <ExpandLess /> : <ExpandMore />}
+            {!NRopen ? <ChevronRightIcon /> : <KeyboardArrowDownIcon />}
           </ListItemButton>
           <Collapse in={NRopen} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
@@ -216,7 +214,7 @@ export default function PermanentDrawerLeft(props) {
               <LaptopIcon />
             </ListItemIcon>
             <ListItemText primary="My Time Table & Attendance" />
-            {TTopen ? <ExpandLess /> : <ExpandMore />}
+            {!TTopen ? <ChevronRightIcon /> : <KeyboardArrowDownIcon />}
           </ListItemButton>
           <Collapse in={TTopen} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
@@ -241,7 +239,7 @@ export default function PermanentDrawerLeft(props) {
               <LaptopIcon />
             </ListItemIcon>
             <ListItemText primary="Student Service Requests" />
-            {SSRopen ? <ExpandLess /> : <ExpandMore />}
+            {!SSRopen ? <ChevronRightIcon /> : <KeyboardArrowDownIcon />}
           </ListItemButton>
           <Collapse in={SSRopen} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
