@@ -1,4 +1,4 @@
-#SRM ACADEMIA HOME PAGE
+# SRM ACADEMIA HOME PAGE
 
 
 # Getting Started with Create React App
